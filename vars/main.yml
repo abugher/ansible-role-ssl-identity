@@ -1,4 +1,12 @@
 ---
+system_groups:
+  - 'sslkey'
+create_files:
+  - owner:              'root'
+    group:              'sslkey'
+    mode:               '0750'
+    path:               '/etc/ssl/private'
+    state:              'directory'
 install_files:
   - owner:              'root'
     group:              'root'
@@ -16,7 +24,7 @@ install_files:
     src:                "../../../certificate_authority/hosts/{{ inventory_hostname }}/chain.pem"
     dest:               "/etc/ssl/certs/chain.pem"
   - owner:              'root'
-    group:              'root'
+    group:              'sslkey'
     mode:               '0640'
     src:                "../../../sensitive_certificate_authority/hosts/{{ inventory_hostname }}/key.pem"
     dest:               "/etc/ssl/private/{{ inventory_hostname }}.pem"
