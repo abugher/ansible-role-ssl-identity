@@ -1,6 +1,4 @@
 ---
-dependencies:
-  - 'ssl-client'
 system_groups:
   - 'sslkey'
 create_files:
