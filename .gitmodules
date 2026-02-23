@@ -9,7 +9,7 @@
 	url = ../../ansible-environment.git
 [submodule "certificate-authority"]
 	path = certificate-authority
-	url = git@github.com:abugher/certificate-authority.git
+	url = ../../certificate-authority.git
 [submodule "sensitive-certificate-authority"]
 	path = sensitive-certificate-authority
-	url = ansible@files:/storage/control-center/sensitive-certificate-authority.git
+	url = ../../sensitive-certificate-authority.git
