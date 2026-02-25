@@ -1,15 +1,6 @@
 [submodule "tasks/common"]
 	path = tasks/common
 	url = https://github.com/abugher/ansible-common-tasks.git
-[submodule "inventory"]
-	path = inventory
-	url = https://github.com/abugher/ansible-inventory.git
 [submodule "environment"]
 	path = environment
 	url = https://github.com/abugher/ansible-environment.git
-[submodule "certificate-authority"]
-	path = certificate-authority
-	url = https://github.com/abugher/certificate-authority.git
-[submodule "sensitive-certificate-authority"]
-	path = sensitive-certificate-authority
-	url = ansible@files:/storage/control-center/sensitive-certificate-authority.git
